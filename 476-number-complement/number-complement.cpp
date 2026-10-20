@@ -5,6 +5,9 @@ public:
         int mask =0;
         int ans =0;
 
+        if(num==0)
+        return 1;
+
         while(m!=0){
             mask = (mask << 1) | 1;
             m = m >> 1;
